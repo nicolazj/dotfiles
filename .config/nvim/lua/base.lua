@@ -1,4 +1,4 @@
---vim.cmd("autocmd!")
+vim.cmd("autocmd!")
 
 vim.g.mapleader = ' '
 

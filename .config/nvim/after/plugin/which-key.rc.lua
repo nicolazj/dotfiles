@@ -18,6 +18,10 @@ wk.register({
 		name = "Tree",
 		t = { "<cmd>:NvimTreeToggle<CR>", "Toggle Tree" },
 	},
+	["<leader>"] = {
+		"<cmd>HopWord<CR>",
+		"Hop",
+	},
 }, { prefix = "<leader>" })
 
 wk.register({

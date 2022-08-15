@@ -49,6 +49,12 @@ return require("packer").startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 	use({ "akinsho/bufferline.nvim", tag = "v2.*" })
 	use("kyazdani42/nvim-tree.lua")
+
 	use("tpope/vim-commentary")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use("tpope/vim-surround")
+	use({
+		"phaazon/hop.nvim",
+		branch = "v2", -- optional but strongly recommended
+	})
 end)
