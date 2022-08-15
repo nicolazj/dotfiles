@@ -57,4 +57,5 @@ return require("packer").startup(function(use)
 		"phaazon/hop.nvim",
 		branch = "v2", -- optional but strongly recommended
 	})
+	use("j-hui/fidget.nvim")
 end)
