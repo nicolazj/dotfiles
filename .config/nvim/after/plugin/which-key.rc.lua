@@ -43,3 +43,11 @@ wk.register({
 	["<Tab>"] = { "<cmd>BufferLineCycleNext<CR>", "Next buffer" },
 	["<S-Tab>"] = { "<cmd>BufferLineCyclePrev<CR>", "Prev buffer" },
 })
+
+wk.register({
+
+	g = {
+		name = "Code in VISUAL",
+		a = { ":<C-U>Lspsaga range_code_action<CR>", "Code Action in VISUAL" },
+	},
+}, { mode = "v" })
