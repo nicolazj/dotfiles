@@ -6,7 +6,8 @@ wk.register({
 		f = { "<cmd>Telescope find_files<CR>", "Find File" },
 		b = { "<cmd>Telescope buffers<CR>", "Find Buffers" },
 		g = { "<cmd>Telescope live_grep<CR>", "Find Buffers" },
-		r = { "<cmd>Telescope resume<CR>", "Resume" },
+		-- r = { "<cmd>Telescope resume<CR>", "Resume" },
+		r = { "<cmd>lua require('spectre').open()<CR>", "Find & Replace" },
 	},
 	b = {
 		name = "buffer",
@@ -51,3 +52,15 @@ wk.register({
 		a = { ":<C-U>Lspsaga range_code_action<CR>", "Code Action in VISUAL" },
 	},
 }, { mode = "v" })
+
+local api = vim.api
+api.nvim_create_autocmd("FileType", {
+	pattern = { "spectre_panel" },
+	callback = function()
+		local bufnr = vim.api.nvim_get_current_buf()
+		wk.register({
+			s = { "<cmd>lua require('spectre.actions').run_current_replace()<CR>", "Replace" },
+			a = { "<cmd>lua require('spectre.actions').run_replace()<CR>", "Replace all" },
+		}, { buffer = bufnr, prefix = "<leader>" })
+	end,
+})

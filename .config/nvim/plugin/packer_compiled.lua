@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/Users/nickjiang/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/Users/nickjiang/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/windwp/nvim-spectre"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/nickjiang/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

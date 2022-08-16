@@ -58,4 +58,5 @@ return require("packer").startup(function(use)
 		branch = "v2", -- optional but strongly recommended
 	})
 	use("j-hui/fidget.nvim")
+	use("windwp/nvim-spectre")
 end)
