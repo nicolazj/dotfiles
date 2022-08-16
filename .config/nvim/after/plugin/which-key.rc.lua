@@ -3,7 +3,7 @@ wk.setup({})
 wk.register({
 	f = {
 		name = "find",
-		f = { "<cmd>Telescope find_files<CR>", "Find File" },
+		f = { "<cmd>Telescope find_files hidden=true<CR>", "Find File" },
 		b = { "<cmd>Telescope buffers<CR>", "Find Buffers" },
 		g = { "<cmd>Telescope live_grep<CR>", "Find Buffers" },
 		-- r = { "<cmd>Telescope resume<CR>", "Resume" },
