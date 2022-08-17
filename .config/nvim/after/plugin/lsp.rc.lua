@@ -19,13 +19,13 @@ tsserver.setup({
 	},
 })
 require("lspconfig").sumneko_lua.setup({
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = {"vim"},
-      },
-    },
-  },
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" },
+			},
+		},
+	},
 	capabilities = capabilities,
 	on_attach = function(client)
 		client.resolved_capabilities.document_formatting = false
