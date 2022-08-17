@@ -15,6 +15,7 @@ return require("packer").startup(function(use)
 		tag = "0.1.0",
 	})
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use("nvim-telescope/telescope-live-grep-args.nvim")
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",

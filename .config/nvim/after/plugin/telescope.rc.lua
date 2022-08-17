@@ -10,14 +10,8 @@ telescope.setup({
 			horizontal = { width = 0.9 },
 		},
 	},
-	extensions = {
-		fzf = {
-			fuzzy = true,
-			override_generic_sorter = false,
-			override_file_sorter = true,
-			case_mode = "smart_case",
-		},
-	},
+	extensions = {},
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("live_grep_args")
