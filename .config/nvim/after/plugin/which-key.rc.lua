@@ -6,6 +6,7 @@ wk.register({
 		f = { "<cmd>Telescope find_files hidden=true<CR>", "Find File" },
 		b = { "<cmd>Telescope buffers<CR>", "Find Buffers" },
 		g = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", "Find Buffers" },
+		p = { "<cmd>lua require'telescope'.extensions.project.project{}<CR>", "Projects" },
 		-- r = { "<cmd>Telescope resume<CR>", "Resume" },
 		r = { "<cmd>lua require('spectre').open()<CR>", "Find & Replace" },
 	},
